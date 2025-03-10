@@ -3,6 +3,7 @@
 	import Toc from "$lib/Toc.svelte";
 	import { dateToString } from "$lib/utils";
 	import type { PageProps } from "./$types";
+	import { base } from "$app/paths";
 
 	let { data }: PageProps = $props();
 </script>
@@ -13,7 +14,7 @@
 	<!-- <meta property="og:url" content=${} /> -->
 	<meta property="og:site_name" content="Tiny Forest" />
 	<meta property="og:description" content={data.description} />
-	<meta property="og:image" content="../../../../static/favicon.png" />
+	<!--<meta property="og:image" content="{base}/static/favicon.png" />-->
 </svelte:head>
 
 <div>

@@ -1,12 +1,16 @@
+<script lang="ts">
+	import { base } from "$app/paths";
+</script>
+
 <div class="container">
 	<header>
 		<h1 class="homepage-title">
-			<a href="/"> Tiny Forest </a>
+			<a href="{base}/"> Tiny Forest </a>
 		</h1>
 
 		<div class="header-link">
-			<a href="/">Home</a>
-			<a href="/">About</a>
+			<a href="{base}/">Home</a>
+			<a href="">About</a>
 		</div>
 	</header>
 	<main>
