@@ -13,7 +13,7 @@
 	<!-- <meta property="og:url" content=${} /> -->
 	<meta property="og:site_name" content="Tiny Forest" />
 	<meta property="og:description" content={data.description} />
-	<meta property="og:image" content="/static/favicon.png" />
+	<meta property="og:image" content="../../../../static/favicon.png" />
 </svelte:head>
 
 <div>
