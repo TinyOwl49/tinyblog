@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import { type ArticleData } from "$lib/articles";
 	import { dateToString } from "$lib/utils";
 
@@ -7,7 +8,10 @@
 
 <div class="article-wrap">
 	{#each articles as art}
-		<a class="article-wrap-link" href={`/article/${art.slug}`}>
+		<a
+			class="article-wrap-link"
+			href={`${base}/article/${art.slug}`}
+		>
 			<nav class="article-card">
 				{#if art.thumbnail}
 					<img

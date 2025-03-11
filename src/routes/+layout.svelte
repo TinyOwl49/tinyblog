@@ -10,7 +10,7 @@
 
 		<div class="header-link">
 			<a href="{base}/">Home</a>
-			<a href="">About</a>
+			<a href="https://x.com/kasumi_fukurou">About</a>
 		</div>
 	</header>
 	<main>
