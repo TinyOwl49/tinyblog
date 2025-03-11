@@ -14,18 +14,18 @@ tag: "programming, math, poem"
 プログラミングが趣味で、PythonやC#、Typescriptあたりがちょっとだけできます。
 ### このブログを作った理由
 自分の興味のあることを好き勝手に喋ったり、調べたことを残しておくために作りました。他ブログ(NoteとかZennとか)にあげるまでもないことを記事にしていく予定です。
-## 使った技術
+## 使った技術について話す
 以下を使用しました。
 - Typescript
 - Svelte / Sveltekit
 - Marked.js
 - Highlight.js, Katex等
-- Github Pages
+- Github Pages  
 
-作成にあたっては、ChatGPT先生にもお力添えをいただきました。
+ソースコードは[こちら](https://github.com/TinyOwl49/tinyblog)で見れます。
 ### Svelte
-フロントエンドのフレームワークにはSvelteを使用しました。私はSvelte推しです。
-Reactも少しだけ触れるのですが、SvelteはReactに比べると記法がシンプルでわかりやすく、学習コストが低いです。  
+フロントエンドのフレームワークには[Svelte](https://svelte.jp/)を使用しました。私はSvelte推しです。
+SvelteはReactなどの他フレームワークに比べて記法がシンプルでわかりやすく、学習コストが低いのが特徴です。  
 例えばこの記事ページのソースコードはこんな感じ。
 ```html
 <script lang="ts">
@@ -65,8 +65,16 @@ Reactも少しだけ触れるのですが、SvelteはReactに比べると記法�
 	...
 </style>
 ```
-とてもシンプル。みんなも使おう、Svelte。
+とてもシンプルですてき。みんなも使おう、Svelte。
 
-### Github PagesとSveltekit
-ここで少し苦労しました。基本的には[公式の説明](https://svelte.jp/docs/kit/adapter-static)に従えば良いです。   
-しかし、私はGithub Pagesの設定がうまくいかず、
+### Github Pagesにデプロイ
+Sveltekitでは静的サイトを簡単に生成できるので、Github Pagesと組み合わせることで楽にブログを作ることができます。  
+参考: [公式Doc](https://svelte.jp/docs/kit/adapter-static)
+  
+ですが私はここで詰まって苦労したので、少しメモを残しておきたいと思います。  
+基本的には公式Docに従えば良いです。ただ、このサイトのworkflowをそのままコピペして使うとymlのインデントが正しくないと怒られたので、手動で直しました。   
+また、package-lock.jsonがあるとインストールするライブラリが環境によって違うことが原因でエラーが発生することがあるので、それを消して.gitignoreに追加する必要がありました。   
+
+## おわりに
+このブログが少しでも誰かのお役に立てば幸いです。  
+よければ[Twitter(新X)](https://x.com/kasumi_fukurou)をフォローしてください。
