@@ -77,4 +77,4 @@ Sveltekitでは静的サイトを簡単に生成できるので、Github Pages�
 
 ## おわりに
 このブログが少しでも誰かのお役に立てば幸いです。  
-よければ[Twitter(新X)](https://x.com/kasumi_fukurou)をフォローしてください。
+よければ[Twitter(新X)](https://x.com/kasumi_fukurou)のフォローをお願いします。
