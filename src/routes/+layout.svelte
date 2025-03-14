@@ -5,7 +5,7 @@
 <div class="container">
 	<header>
 		<h1 class="homepage-title">
-			<a href="{base}/"> Tiny Forest </a>
+			<a href="{base}/"> Tiny Blog </a>
 		</h1>
 
 		<div class="header-link">
@@ -64,6 +64,10 @@
 	main {
 		color: #eee;
 		font-size: 1.1rem;
-		line-height: 1.5rem;
+		line-height: 1.6rem;
+		font-family: "Noto Sans JP", sans-serif;
+		font-optical-sizing: auto;
+		font-weight: 330;
+		font-style: normal;
 	}
 </style>
