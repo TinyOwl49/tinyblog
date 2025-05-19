@@ -50,7 +50,8 @@ export function loadArticleData(text: string): ArticleData | undefined {
 
 export function getAllArticles() {
 	const articles: ArticleData[] = [];
-	const files = import.meta.glob(`../../articles/*.md`, { eager: true, query: '?raw' })
+	/* _を先頭に含むファイルは編集中を表すので除外 */
+	const files = import.meta.glob(`../../articles/[^_]*.md`, { eager: true, query: '?raw' })
 	Object.values(files).forEach(v => {
 		const data = v['default'];
 		const article = loadArticleData(data);
