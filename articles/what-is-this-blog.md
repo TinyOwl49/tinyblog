@@ -89,7 +89,7 @@ const files = import.meta.glob(`../../articles/[^_]*.md`, { eager: true, query: 
 ```
 という感じでmarkdownファイルを読み込んで、marked.jsを使って表示させています。
 markdownを動的に読み込みたかったのでこのような方法をとっています。
-もっといい方法があればぜひ教えてください。
+もっといい方法があるかもしれません。
 ### Github Pagesにデプロイ
 Sveltekitでは静的サイトを簡単に生成できるので、Github Pagesと組み合わせることで楽にブログを作ることができます。すばらしい。  
 参考: [公式Doc](https://svelte.jp/docs/kit/adapter-static)
