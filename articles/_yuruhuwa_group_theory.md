@@ -1,7 +1,7 @@
 ---
 title: "なんとなく群論を理解する"
 slug: "yuruhuwa_group_theory"
-date: "2025-4-11"
+date: "2025/04/11"
 author: tinyowl
 description: "テキトーに群論を理解してみましょう。"
 thumbnail: "https://cdn-icons-png.flaticon.com/512/4525/4525887.png"
