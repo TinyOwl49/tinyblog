@@ -42,4 +42,4 @@ ani = FuncAnimation(fig, plot, interval=10)
 plt.show()
 ```
 
-![平面波のアニメーション](/imgs/plane_wave.gif)
+![平面波のアニメーション](${base}/imgs/plane_wave.gif)

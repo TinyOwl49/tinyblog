@@ -1,8 +1,11 @@
 <script lang="ts">
+	import { base } from "$app/paths";
 	import * as markdown from "./markdown/markdown";
 	markdown.set_options();
 
 	export let content: string = "";
+	// TODO: ちょいヤバコード！もしかしたらなおす
+	content = content.replace("${base}", base);
 </script>
 
 <div>
