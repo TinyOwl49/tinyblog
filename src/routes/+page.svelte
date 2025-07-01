@@ -14,7 +14,11 @@
 		property="og:description"
 		content="ちょっとしたことを書いていく個人ブログです。"
 	/>
-	<meta property="og:image" content="${base}/favicon.png" />
+	<meta
+		property="og:image"
+		content="https://raw.githubusercontent.com/TinyOwl49/tinyblog/refs/heads/main/static/favicon.png"
+	/>
+
 </svelte:head>
 
 <div class="article-list-container">
