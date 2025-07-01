@@ -5,7 +5,7 @@
 
 	export let content: string = "";
 	// TODO: ちょいヤバコード！もしかしたらなおす
-	content = content.replace("${base}", base);
+	content = content.replace("\$\{base\}", base);
 </script>
 
 <div>
