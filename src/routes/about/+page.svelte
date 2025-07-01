@@ -13,7 +13,7 @@
 	<div class="about-me">
 		<div>
 			<img
-				src="/myicon.jpeg"
+				src={`${base}/myicon.jpeg`}
 				class="about-me-icon"
 				alt="Tiny Forest Logo"
 				width="200"

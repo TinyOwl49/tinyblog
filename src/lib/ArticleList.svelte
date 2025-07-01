@@ -4,6 +4,7 @@
 	import { dateToString } from "$lib/utils";
 
 	export let articles: ArticleData[];
+	console.log("base url", base);
 </script>
 
 <div class="article-wrap">
@@ -16,7 +17,7 @@
 				{#if art.thumbnail}
 					<img
 						class="thumbnail"
-						src={base+art.thumbnail}
+						src={base + art.thumbnail}
 						alt={art.thumbnail}
 					/>
 				{/if}
