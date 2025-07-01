@@ -4,7 +4,7 @@ slug: "what-is-this-blog"
 date: "2025/03/05"
 author: tinyowl
 description: "このブログの誕生秘話(?)です。"
-thumbnail: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgv6HbVj84Ii-iHFz3DWjFdZ6VSDFiopTyx6HcjKKbg62xoJCWjO1g_3EIHl7MLzExMe0si90liMXu0jbSJiUJOJdLGYO7R-bqqKeXFO7ofD4RFpFbtnq29Tvj0aFWis-pMaw662DX36WF4m_c9lLYF-u76DBMHqMN3MYLRyp4AEHaO3JPu59CWVu4V62Nr/s400/kodai_magdeburg_unicorn_kaseki.png"
+thumbnail: "/imgs/bone_zaurusu.png"
 tag: "programming, math, poem"
 ---
 ## 自己紹介
@@ -82,6 +82,7 @@ tag: "programming, math, poem"
 ---
 ## 自己紹介
 **ねこふくろういぬ**と申します。
+...
 ```
 Sveltekit側では
 ```ts

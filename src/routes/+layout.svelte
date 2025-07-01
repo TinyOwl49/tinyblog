@@ -10,7 +10,7 @@
 
 		<div class="header-link">
 			<a href="{base}/">Home</a>
-			<a href="https://x.com/kasumi_fukurou">About</a>
+			<a href="{base}/about">About</a>
 		</div>
 	</header>
 	<main>
@@ -24,6 +24,9 @@
 	}
 
 	.homepage-title {
+		text-shadow:
+			0 0 5px lightskyblue,
+			0 0 10px lightskyblue;
 		margin: 15px 10px;
 	}
 
@@ -48,17 +51,8 @@
 		color: dodgerblue;
 	}
 
-	@media screen and (min-width: 600px) {
-		main {
-			margin: 30px 20%;
-		}
-	}
-
-	@media screen and (max-width: 600px) {
-		main {
-			margin: 30px 0;
-			font-size: 1rem;
-		}
+	main {
+		margin: 30px 0;
 	}
 
 	main {

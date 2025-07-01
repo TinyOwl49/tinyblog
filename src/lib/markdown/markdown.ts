@@ -17,7 +17,7 @@ export function set_options() {
 		gfm: true, // GitHub Flavored Markdownを使用
 	});
 
-	marked.use(code_with_filename(), latex_code(), question_block());
+	marked.use(code_with_filename(), latex_code(), question_block(), header_with_id());
 }
 
 function code_with_filename(): marked.MarkedExtension {
@@ -49,6 +49,22 @@ function code_with_filename(): marked.MarkedExtension {
 			code(code: any, lang: any, _: any) { return renderer(code, lang) },
 		}
 	}
+}
+
+
+function header_with_id(): marked.MarkedExtension {
+	let headerIndex = 0;
+	return {
+		renderer: {
+			heading(token: marked.Tokens.Heading) {
+				const text = this.parser.parseInline(token.tokens);
+				const level = token.depth;
+				const id = `heading-${headerIndex++}`;
+				console.log(`<h${level} id="${id}">${text}</h${level}>\n`)
+				return `<h${level} id="${id}">${text}</h${level}>\n`;
+			}
+		}
+	};
 }
 
 export function toHTML(content: string) {

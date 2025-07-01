@@ -4,7 +4,7 @@ slug: "test-post"
 date: "2025/02/28"
 author: tinyowl
 description: "ブログ機能チェックのためのテスト用記事です。"
-thumbnail: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSf0Hyp0bDUtqGBfKG92EHTIX33DDvwCrmkw&s"
+thumbnail: "/imgs/test-thumbnail.png"
 tag: "programming, math, poem"
 ---
 
