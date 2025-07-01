@@ -23,7 +23,7 @@
 				<a href="https://github.com/TinyOwl49">
 					<img
 						class="color-invert"
-						src="/github.svg"
+						src={`${base}/github.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
@@ -31,7 +31,7 @@
 				</a>
 				<a href="https://zenn.dev/tinyowl">
 					<img
-						src="/zenn.svg"
+						src={`${base}/zenn.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
@@ -40,7 +40,7 @@
 				<a href="https://x.com/kasumi_fukurou">
 					<img
 						class="color-invert"
-						src="/twitter-x.svg"
+						src={`${base}/twitter-x.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
