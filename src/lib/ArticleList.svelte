@@ -16,7 +16,7 @@
 				{#if art.thumbnail}
 					<img
 						class="thumbnail"
-						src={art.thumbnail}
+						src={base+art.thumbnail}
 						alt={art.thumbnail}
 					/>
 				{/if}

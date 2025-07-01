@@ -60,7 +60,6 @@ function header_with_id(): marked.MarkedExtension {
 				const text = this.parser.parseInline(token.tokens);
 				const level = token.depth;
 				const id = `heading-${headerIndex++}`;
-				console.log(`<h${level} id="${id}">${text}</h${level}>\n`)
 				return `<h${level} id="${id}">${text}</h${level}>\n`;
 			}
 		}
