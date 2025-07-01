@@ -1,4 +1,5 @@
 <script lang="ts">
+    import { base } from "$app/paths";
 	import ArticleList from "$lib/ArticleList.svelte";
 	import { articles } from "$lib/stores";
 </script>
@@ -13,7 +14,7 @@
 		property="og:description"
 		content="ちょっとしたことを書いていく個人ブログです。"
 	/>
-	<meta property="og:image" content="/favicon.png" />
+	<meta property="og:image" content="${base}/favicon.png" />
 </svelte:head>
 
 <div class="article-list-container">
