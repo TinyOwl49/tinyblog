@@ -53,7 +53,6 @@ export function latex_code(): marked.MarkedExtension {
 
 	const walkTokens = (token: any) => {
 		if (token.type === "latex") {
-			console.log("Processing LaTeX token:", token.tex);
 			const res = katex.renderToString(token.tex, { output: "mathml", throwOnError: false, displayMode: token.type === "latex" && token.raw.startsWith("$$") });
 			token.html = res;
 		}

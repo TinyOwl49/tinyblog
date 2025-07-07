@@ -4,7 +4,7 @@ slug: "test-post"
 date: "2025/02/28"
 author: tinyowl
 description: "ブログ機能チェックのためのテスト用記事です。"
-thumbnail: "/imgs/test-thumbnail.png"
+thumbnail: "/imgs/bone_zaurusu.png"
 tag: "programming, math, poem"
 ---
 

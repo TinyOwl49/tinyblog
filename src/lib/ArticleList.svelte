@@ -4,7 +4,6 @@
 	import { dateToString } from "$lib/utils";
 
 	export let articles: ArticleData[];
-	console.log("base url", base);
 </script>
 
 <div class="article-wrap">
