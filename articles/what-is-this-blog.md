@@ -10,8 +10,7 @@ tag: "programming, math, poem"
 ## 自己紹介
 **ねこふくろういぬ**と申します。
 情報理論や数学、物理、天文が好きな大学1年生です。   
-プログラミングが趣味で、PythonやC#、Typescript、Nimあたりがちょっとだけできます。
-Rustは勉強中です。
+詳しくは[プロフィール](https://tinyowl49.github.io/about/)をご覧ください。
 ### このブログを作った理由
 自分の興味のあることを好き勝手に喋ったり、調べたことを残しておくために作りました。
 他ブログ(Noteとか[Zenn](https://zenn.dev/tinyowl)とか)にあげるまでもないことを記事にしていく予定です。   
@@ -88,12 +87,10 @@ Sveltekit側では
 ```ts
 const files = import.meta.glob(`../../articles/[^_]*.md`, { eager: true, query: '?raw' })
 ```
-という感じでmarkdownファイルを読み込んで、marked.jsを使って表示させています。
-markdownを動的に読み込みたかったのでこのような方法をとっています。
-もっといい方法があるかもしれません。
+という感じでmarkdownファイルを読み込んで、marked.jsを使ってHTMLに変換してから表示しています。
+markdownを動的に読み込みたかったのでこのような方法をとっているのですが、もっといい方法があるかもしれません。
 ### Github Pagesにデプロイ
 Sveltekitでは静的サイトを簡単に生成できるので、Github Pagesと組み合わせることで楽にブログを作ることができます。すばらしい。  
 参考: [公式Doc](https://svelte.jp/docs/kit/adapter-static)
 ## おわりに
-このブログが少しでも誰かのお役に立てば幸いです。  
-よければ[Twitter(新X)](https://x.com/kasumi_fukurou)のフォローをお願いします。
+このブログサイトが少しでも誰かのお役に立てば幸いです。  

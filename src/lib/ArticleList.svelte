@@ -77,4 +77,16 @@
 	.article-description {
 		margin-top: 10px;
 	}
+
+	@media (max-width: 600px) {
+		.article-title {
+			font-size: 1.0rem;
+		}
+	}
+
+	@media (min-width: 600px) {
+		.article-title {
+			font-size: 1.2rem;
+		}
+	}
 </style>

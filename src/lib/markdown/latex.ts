@@ -30,10 +30,10 @@ export function latex_code(): marked.MarkedExtension {
 		name: "latex",
 		level: "block",
 		start(src) {
-			return src.indexOf('\n$');
+			return src.indexOf('\n$$');
 		},
 		tokenizer(src, tokens) {
-			const rule = /^\$+(.+?)\$+/s;
+			const rule = /^\$\$(.+?)\$\$/s;
 			const match = rule.exec(src);
 			if (match) {
 				return {
@@ -53,7 +53,8 @@ export function latex_code(): marked.MarkedExtension {
 
 	const walkTokens = (token: any) => {
 		if (token.type === "latex") {
-			const res = katex.renderToString(token.tex, { output: "mathml", throwOnError: false });
+			console.log("Processing LaTeX token:", token.tex);
+			const res = katex.renderToString(token.tex, { output: "mathml", throwOnError: false, displayMode: token.type === "latex" && token.raw.startsWith("$$") });
 			token.html = res;
 		}
 	}

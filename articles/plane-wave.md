@@ -7,8 +7,10 @@ description: "Matplotlibを使って平面波を描画する方法のメモで�
 thumbnail: "/imgs/plane_wave.png"
 tag: "programming, math, memo"
 ---
-### 数式
-$$ Z = \cos \left( k \cdot r - \omega t \right) $$
+? 平面波の数式
+位置$\textbf{r}$における進行方向$\textbf{k}$の平面波の振幅$z$は、以下の式で表されます。  
+$$ z = \cos \left( \textbf{k} \cdot \textbf{r} - \omega t \right) $$
+?
 ### Pythonコード
 ```python
 import matplotlib.pyplot as plt
