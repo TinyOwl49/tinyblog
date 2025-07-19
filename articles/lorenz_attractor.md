@@ -39,7 +39,8 @@ def lorenz(x, y, z, s=10, r=28, b=8 / 3):
 
 
 dt = 0.01
-n_steps = 15000
+# アニメーションの場合、5000ステップ以上だとかなり時間がかかります。
+n_steps = 10000
 
 xs = np.empty(n_steps + 1, dtype="float64")
 ys = np.empty(n_steps + 1, dtype="float64")
@@ -54,16 +55,6 @@ for i in range(n_steps):
     zs[i + 1] = zs[i] + (dot_z * dt)
 
 cm = plt.get_cmap('RdYlBu')
-# fig = plt.figure(figsize=(7, 7))
-# ax = fig.add_subplot(projection="3d")
-# ax.xaxis.pane.fill = False
-# ax.yaxis.pane.fill = False
-# ax.zaxis.pane.fill = False
-# ax.set_xlabel("X Axis")
-# ax.set_ylabel("Y Axis")
-# ax.set_zlabel("Z Axis")
-# ax.set_title("Lorenz Attractor Animation")
-
 
 points = np.array([xs, ys, zs]).T.reshape(-1, 1, 3)
 segments = np.concatenate([points[:-1], points[1:]], axis=1)
@@ -90,11 +81,17 @@ def update(i):
     line_collection.set_segments(segments[:i+1])
     return line_collection,
 
-# ani = animation.FuncAnimation(fig, update, frames=n_steps, interval=8, blit=True)
 
+# --- アニメーションをmp4にして保存 ---
+# ani = animation.FuncAnimation(fig, update, frames=n_steps, interval=8, blit=True)
 # 時間がかかるので注意
 # ani.save('anim_gradient.mp4', writer="ffmpeg", dpi=150)
+
+# 出てきた画像をffmpegを使用して60FPSに変換するコマンドです。
 # ffmpeg -i ./anim_gradient.mp4 -filter:v fps=60 output.mp4
+
+
+# --- ローレンツアトラクタを表示 ---
 for i in range(n_steps):
     update(i)
 

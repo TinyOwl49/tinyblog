@@ -38,7 +38,7 @@ def get_color(alpha):
 
 
 @njit("(float64, float64, float64, float64)")
-def mandelbrot(cx, cy, max_iters, bailout):
+def burning_ship(cx, cy, max_iters, bailout):
     zx, zy, radius2 = 0.0, 0.0, 0.0
     iteration = 0
     while iteration < max_iters and radius2 <= bailout:
@@ -71,7 +71,7 @@ def draw_image(
                 cy = imag + imag_offset
                 cx = real + real_offset
 
-                iteration, radius2 = mandelbrot(cx, cy, max_iters, bailout)
+                iteration, radius2 = burning_ship(cx, cy, max_iters, bailout)
 
                 outside = iteration < max_iters
                 if outside:
@@ -119,13 +119,8 @@ def draw(
 # print(f"JIT compiling in {duration:.5f} sec.")
 
 width, height = 2560, 1920
-# center_real, center_imag = -1.75, 0.03
-# magnification = 30
-# center_real, center_imag = -0.3, 0.4
-# magnification = 1.0
-
-center_real, center_imag = -1.09296, 0.59039
-magnification = 150
+center_real, center_imag = -0.3, 0.4  # 中心座標
+magnification = 1.0                   # 拡大率
 
 max_iters = 200
 sampling = 2
@@ -133,6 +128,7 @@ bailout = 100.0
 
 pixel_size = 4 / magnification / width
 
+# matplotlibのウィンドウ右下の座標が、複素数平面の座標と一致するようにしています。
 extent = (
     center_real - pixel_size * width / 2,
     center_real + pixel_size * width / 2,
@@ -172,6 +168,15 @@ print("image was saved.")
 ![バーニングシップ・フラクタル5](${base}/imgs/burning_fractal/5.png)
 ![バーニングシップ・フラクタル6](${base}/imgs/burning_fractal/6.png)
 
+それぞれの座標は上から
+- -0.3 + i0.4
+- -1.75 + i0.03
+- -1.74 + i0.02
+- -1.742364+i0.018916
+- -0.75682+i1.12772
+- -1.09296+i0.59039
+
+です。
 
 ### 参考
 [Wikipedia バーニングシップ・フラクタル](https://ja.wikipedia.org/wiki/%E3%83%90%E3%83%BC%E3%83%8B%E3%83%B3%E3%82%B0%E3%82%B7%E3%83%83%E3%83%97%E3%83%BB%E3%83%95%E3%83%A9%E3%82%AF%E3%82%BF%E3%83%AB)  
