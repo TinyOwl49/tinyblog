@@ -13,7 +13,7 @@ async function generateSitemap() {
 	const urlset = pages
 		.map((page) => {
 			// 'index.html'をルート'/'に変換
-			const path = page.replace('index.html', '');
+			const path = page.replace(/index\.html$/, '').replace(/\.html$/, '');
 			return `
   <url>
     <loc>${SITE_URL}/${path}</loc>
