@@ -13,7 +13,7 @@
 	<div class="about-me">
 		<div>
 			<img
-				src={`${base}/myicon.jpeg`}
+				src={`${base}/imgs/icon/myicon.jpeg`}
 				class="about-me-icon"
 				alt="Tiny Forest Logo"
 				width="200"
@@ -23,7 +23,7 @@
 				<a href="https://github.com/TinyOwl49">
 					<img
 						class="color-invert"
-						src={`${base}/github.svg`}
+						src={`${base}/imgs/icon/github.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
@@ -31,7 +31,7 @@
 				</a>
 				<a href="https://zenn.dev/tinyowl">
 					<img
-						src={`${base}/zenn.svg`}
+						src={`${base}/imgs/icon/zenn.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
@@ -40,7 +40,7 @@
 				<a href="https://x.com/kasumi_fukurou">
 					<img
 						class="color-invert"
-						src={`${base}/twitter-x.svg`}
+						src={`${base}/imgs/icon/twitter-x.svg`}
 						alt="GitHub"
 						width="30"
 						height="30"
