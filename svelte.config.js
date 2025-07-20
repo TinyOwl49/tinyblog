@@ -19,12 +19,6 @@ const config = {
 		}),
 		paths: {
 			base: dev ? '' : '/tinyblog'
-		},
-		prerender: {
-			entries: [
-				'*', 
-				'/sitemap.xml' 
-			]
 		}
 	}
 };
