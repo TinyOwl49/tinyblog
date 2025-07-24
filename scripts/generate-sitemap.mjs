@@ -17,7 +17,7 @@ async function generateSitemap() {
 			return `
   <url>
     <loc>${SITE_URL}/${path}</loc>
-    <lastmod>${new Date().toISOString()}</lastmod>
+    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </url>`;
 		})
 		.join('');
