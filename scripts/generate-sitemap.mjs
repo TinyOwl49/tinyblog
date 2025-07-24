@@ -14,6 +14,13 @@ async function generateSitemap() {
 		.map((page) => {
 			// 'index.html'をルート'/'に変換
 			const path = page.replace(/index\.html$/, '').replace(/\.html$/, '');
+
+			// Googleがサイトをクロールする際にエラーが出るので除外
+			const hidePath = [
+				"404"
+			]
+			if (hidePath.includes(path)) return '';
+
 			return `
   <url>
     <loc>${SITE_URL}/${path}</loc>
