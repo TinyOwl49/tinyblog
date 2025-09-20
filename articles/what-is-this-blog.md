@@ -4,7 +4,7 @@ slug: "what-is-this-blog"
 date: "2025/03/05"
 author: tinyowl
 description: "このブログの誕生秘話(?)です。"
-thumbnail: "/imgs/test-thumbnail.png"
+thumbnail: "/thumbnails/what_is_this_blog.jpg"
 tag: "programming, math, poem"
 ---
 ## 自己紹介

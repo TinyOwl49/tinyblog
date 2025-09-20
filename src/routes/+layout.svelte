@@ -20,7 +20,7 @@
 
 <style>
 	:global(html) {
-		background-color: #292929;
+		background-color: #081d35;
 	}
 
 	.homepage-title {
@@ -40,7 +40,7 @@
 	.header-link {
 		position: absolute;
 		top: 30px;
-		right: 30px;
+		right: 80px;
 		float: right;
 	}
 

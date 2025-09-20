@@ -66,7 +66,7 @@
 	.article-content {
 		padding: 10px 20px;
 		border-radius: 10px;
-		background-color: #202020;
+		background-color: #0f1f31;
 		border: 0.5px solid #375c79;
 	}
 

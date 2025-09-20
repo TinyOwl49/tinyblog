@@ -4,7 +4,7 @@ slug: "discord-yomiage"
 date: "2025/06/15"
 author: tinyowl
 description: "ずんだもんにチャンネルの発言を読み上げてもらいます。"
-thumbnail: "/imgs/zunda.png"
+thumbnail: "/thumbnails/zunda.jpg"
 tag: "programming"
 ---
 

@@ -4,7 +4,7 @@ slug: "plane-wave"
 date: "2025/07/01"
 author: tinyowl
 description: "Matplotlibを使って平面波を描画する方法のメモです。"
-thumbnail: "/imgs/plane_wave.png"
+thumbnail: "/thumbnails/plane_wave.jpg"
 tag: "programming, math, memo"
 ---
 ? 平面波の数式

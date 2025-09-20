@@ -51,7 +51,7 @@
 	.article-card {
 		display: flex;
 		flex-flow: row;
-		background-color: #373737;
+		background-color: #183251;
 		padding: 10px 20px;
 		border-radius: 5px;
 	}

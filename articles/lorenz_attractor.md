@@ -4,7 +4,7 @@ slug: "lorenz-attractor"
 date: "2025/07/18"
 author: tinyowl
 description: "ローレンツアトラクタがどのように動いていくか見たいです。"
-thumbnail: "/imgs/lorenz-attractor/1.png"
+thumbnail: "/thumbnails/lorenz-attractor.jpg"
 tag: "programming"
 ---
 

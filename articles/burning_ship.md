@@ -4,7 +4,7 @@ slug: "burningship-fractal"
 date: "2025/07/18"
 author: tinyowl
 description: "バーニングシップ・フラクタルをMatplotlibで表示して鑑賞します。"
-thumbnail: "/imgs/burning_fractal/1.png"
+thumbnail: "/thumbnails/burning_fractal.jpg"
 tag: "programming"
 ---
 
