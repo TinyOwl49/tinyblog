@@ -37,18 +37,35 @@
 		color: #eee;
 	}
 
-	.header-link {
-		position: absolute;
-		top: 30px;
-		right: 80px;
-		float: right;
+	.header-link > a {
+		text-decoration: none;
+		color: dodgerblue;
+			font-size: 1.4rem;
 	}
 
-	.header-link > a {
-		font-size: 1.4rem;
-		text-decoration: none;
-		margin: 10px;
-		color: dodgerblue;
+	@media (min-width: 768px) {
+		.header-link {
+			position: absolute;
+			top: 30px;
+			right: 80px;
+			float: right;
+		}
+
+		.header-link > a {
+			margin: 10px;
+		}
+	}
+
+	@media (max-width: 768px) {
+		.header-link {
+			position: absolute;
+			top: 38px;
+			right: 20px;
+			float: right;
+		}
+		.header-link > a {
+			margin: 5px;
+		}
 	}
 
 	main {

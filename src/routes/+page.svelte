@@ -52,7 +52,7 @@
 
 	@media (max-width: 767px) {
 		.article-list-container {
-			width: 100%;
+			width: 95%;
 		}
 	}
 </style>

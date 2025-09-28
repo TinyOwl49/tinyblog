@@ -7,13 +7,13 @@
 	<p>
 		このブログは、私が学んだことや作ったものを記録するための場所です。<br
 		/>
-		他ブログにあげるまでもないことを残しておくための場所になる予定です。
+		プログラミングや数学、科学技術に関する記事を中心に書いていく予定です。
 	</p>
 	<br />
 	<div class="about-me">
 		<div>
 			<img
-				src={`${base}/imgs/icon/myicon.jpeg`}
+				src={`${base}/imgs/myicon.jpg`}
 				class="about-me-icon"
 				alt="Tiny Forest Logo"
 				width="200"
@@ -82,6 +82,7 @@
 	}
 
 	.about-me-icon {
+		object-fit: cover;
 		border-radius: 50%;
 		margin-right: 30px;
 	}

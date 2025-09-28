@@ -38,7 +38,6 @@
 
 <style>
 	.article-title {
-		font-size: 2.4rem;
 		font-weight: 100;
 		line-height: 1.3;
 		margin: 10px 0;
@@ -47,11 +46,7 @@
 	}
 
 	.article-date {
-		position: relative;
-		right: 50px;
 		float: right;
-		margin-bottom: 20px;
-		font-size: 1.2rem;
 		color: #aaa;
 	}
 
@@ -64,8 +59,6 @@
 	}
 
 	.article-content {
-		padding: 10px 20px;
-		border-radius: 10px;
 		background-color: #0f1f31;
 		border: 0.5px solid #375c79;
 	}
@@ -75,6 +68,17 @@
 	}
 
 	@media screen and (min-width: 600px) {
+		.article-title {
+			font-size: 2.4rem;
+		}
+
+		.article-date {
+			position: relative;
+			right: 50px;
+			margin-bottom: 20px;
+			font-size: 1.2rem;
+		}
+
 		.article-body {
 			width: 84%;
 			margin: 0 8%;
@@ -86,16 +90,37 @@
 			right: 0;
 			width: 300px;
 		}
+
+		.article-content {
+			padding: 10px 20px;
+		}
 	}
 
 	@media screen and (max-width: 600px) {
+		.article-title {
+			font-size: 1.8rem;
+		}
+		.article-date {
+			position: relative;
+			right: 20px;
+			font-size: 1.1rem;
+		}
 		.article-body {
 			width: 100%;
 			flex-direction: column-reverse;
 		}
 		.toc-container {
 			position: relative;
-			margin: 0 auto;
+			left: 30px;
+		}
+
+		.article-content {
+			padding: 10px 10px;
+		}
+
+		/* コードブロックのmarginを削除 */
+		:global(pre) {
+			margin: 0;
 		}
 	}
 </style>

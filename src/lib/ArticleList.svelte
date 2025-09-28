@@ -41,6 +41,7 @@
 		display: flex;
 		flex-flow: column;
 		gap: 15px 0px;
+		overflow-wrap: anywhere;
 	}
 
 	a.article-wrap-link {
@@ -79,7 +80,7 @@
 
 	@media (max-width: 600px) {
 		.article-title {
-			font-size: 1.0rem;
+			font-size: 1rem;
 		}
 	}
 
