@@ -12,7 +12,6 @@ async function generateSitemap() {
 
 	const urlset = pages
 		.map((page) => {
-			// 'index.html'をルート'/'に変換
 			const path = page.replace(/index\.html$/, '').replace(/\.html$/, '');
 
 			// Googleがサイトをクロールする際にエラーが出るので除外
@@ -21,11 +20,27 @@ async function generateSitemap() {
 			]
 			if (hidePath.includes(path)) return '';
 
-			const loc = new URL(path, SITE_URL).href;
+			const url = new URL(path, SITE_URL);
+			// articlesディレクトリ内から同名の.mdファイルを探す
+			const articleMdPath = `./${path}.md`;
+
+			let lastmod = new Date().toISOString();
+			if (fs.existsSync(articleMdPath)) {
+				const file = fs.readFileSync(articleMdPath, 'utf-8');
+				// ファイルの最終更新日を取得
+				const match = file.match(/date:\s*(.*)/);
+				if (match) {
+					const date = new Date(match[1]);
+					if (!isNaN(date)) {
+						lastmod = date.toISOString();
+					}
+				}
+			}
+
 			return `
   <url>
-    <loc>${loc}</loc>
-    <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
+    <loc>${url.href}</loc>
+    <lastmod>${lastmod}</lastmod>
   </url>`;
 		})
 		.join('');

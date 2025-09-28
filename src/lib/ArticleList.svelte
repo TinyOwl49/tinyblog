@@ -10,7 +10,7 @@
 	{#each articles as art}
 		<a
 			class="article-wrap-link"
-			href={`${base}/article/${art.slug}`}
+			href={`${base}/articles/${art.slug}`}
 		>
 			<nav class="article-card">
 				{#if art.thumbnail}

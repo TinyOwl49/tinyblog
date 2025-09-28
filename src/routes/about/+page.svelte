@@ -8,7 +8,7 @@
 		このブログは、私が学んだことや作ったものを記録するための場所です。<br
 		/>
 		プログラミングや数学、科学技術に関する記事を中心に書いていく予定です。<br>
-		このブログのソースコードは[こちら](https://github.com/TinyOwl49/tinyblog)で公開しています。
+		このブログのソースコードは<a href="https://github.com/TinyOwl49/tinyblog">こちら</a>で公開しています。
 	</p>
 	<br />
 	<div class="about-me">
