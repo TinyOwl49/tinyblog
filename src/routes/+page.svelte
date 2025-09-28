@@ -40,7 +40,7 @@
 		display: flex;
 		flex-flow: column;
 		gap: 20px;
-		padding: 20px;
+		padding: 20px 0;
 	}
 
 	@media (min-width: 768px) {
@@ -52,7 +52,7 @@
 
 	@media (max-width: 767px) {
 		.article-list-container {
-			width: 95%;
+			width: 100%;
 		}
 	}
 </style>

@@ -21,9 +21,10 @@ async function generateSitemap() {
 			]
 			if (hidePath.includes(path)) return '';
 
+			const loc = new URL(path, SITE_URL).href;
 			return `
   <url>
-    <loc>${SITE_URL}/${path}</loc>
+    <loc>${loc}</loc>
     <lastmod>${new Date().toISOString().split('T')[0]}</lastmod>
   </url>`;
 		})

@@ -10,7 +10,7 @@ tag: "programming, math, poem"
 ## 自己紹介
 **ねこふくろういぬ**と申します。
 情報理論や数学、物理、天文が好きな大学1年生です。   
-詳しくは[プロフィール](https://tinyowl49.github.io/about/)をご覧ください。
+詳しくは[プロフィール](https://tinyowl49.github.io/tinyblog/about/)をご覧ください。
 ### このブログを作った理由
 自分の興味のあることを好き勝手に喋ったり、調べたことを残しておくために作りました。
 他ブログ(Noteとか[Zenn](https://zenn.dev/tinyowl)とか)にあげるまでもないことを記事にしていく予定です。   
