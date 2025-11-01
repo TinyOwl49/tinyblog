@@ -20,7 +20,7 @@ async function generateSitemap() {
 			]
 			if (hidePath.includes(path)) return '';
 
-			const url = new URL(path, SITE_URL);
+			const url = SITE_URL + '/' + path;
 			// articlesディレクトリ内から同名の.mdファイルを探す
 			const articleMdPath = `./${path}.md`;
 
@@ -39,7 +39,7 @@ async function generateSitemap() {
 
 			return `
   <url>
-    <loc>${url.href}</loc>
+    <loc>${url}</loc>
     <lastmod>${lastmod}</lastmod>
   </url>`;
 		})

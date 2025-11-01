@@ -67,7 +67,7 @@
 		color: skyblue;
 	}
 
-	@media screen and (min-width: 600px) {
+	@media screen and (min-width: 768px) {
 		.article-title {
 			font-size: 2.4rem;
 		}
@@ -96,7 +96,7 @@
 		}
 	}
 
-	@media screen and (max-width: 600px) {
+	@media screen and (max-width: 767px) {
 		.article-title {
 			font-size: 1.8rem;
 		}
