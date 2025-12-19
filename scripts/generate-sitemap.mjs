@@ -1,5 +1,6 @@
 import fs from 'fs';
 import { glob } from 'glob';
+import path from 'path';
 
 const SITE_URL = 'https://tinyowl49.github.io/tinyblog';
 const BUILD_DIR = './build';
@@ -12,19 +13,23 @@ async function generateSitemap() {
 
 	const urlset = pages
 		.map((page) => {
-			const path = page.replace(/index\.html$/, '').replace(/\.html$/, '');
+			const normalizedPage = page.split(path.sep).join('/');
+			const routePath = normalizedPage.replace(/index\.html$/, '').replace(/\.html$/, '');
 
 			// Googleがサイトをクロールする際にエラーが出るので除外
 			const hidePath = [
 				"404"
 			]
-			if (hidePath.includes(path)) return '';
+			if (hidePath.includes(routePath)) return '';
 
-			const url = SITE_URL + '/' + path;
+			const urlPath = routePath ? `/${routePath}` : '';
+			const url = encodeURI(SITE_URL + urlPath);
+
 			// articlesディレクトリ内から同名の.mdファイルを探す
-			const articleMdPath = `./${path}.md`;
+			const articleMdPath = `./${routePath}.md`;
 
 			let lastmod = new Date().toISOString();
+			
 			if (fs.existsSync(articleMdPath)) {
 				const file = fs.readFileSync(articleMdPath, 'utf-8');
 				// ファイルの最終更新日を取得
